@@ -58,6 +58,12 @@
     <Compile Include="frmListeClients.Designer.cs">
       <DependentUpon>frmListeClients.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmModificationClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificationClient.Designer.cs">
+      <DependentUpon>frmModificationClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNvxClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmListeClients.resx">
       <DependentUpon>frmListeClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificationClient.resx">
+      <DependentUpon>frmModificationClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNvxClient.resx">
       <DependentUpon>frmNvxClient.cs</DependentUpon>
