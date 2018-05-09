@@ -17,7 +17,7 @@ namespace TpB2B
     {
 
         /// <summary>
-        /// collection d'objets MStagiaire
+        /// collection d'objets MClients
         /// </summary>
         public static ArrayList ArrayStag = new ArrayList();
 

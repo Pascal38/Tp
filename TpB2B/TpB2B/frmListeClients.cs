@@ -41,7 +41,7 @@ namespace TpB2B
             DataTable dt = new DataTable();
             DataRow dr; // ligne de la datatable
             Int32 i; // var de boucle
-                     // ajout à la datatable de 3 colonnes personnalisées
+                     // ajout à la datatable de 5 colonnes personnalisées
             dt.Columns.Add(new DataColumn("Raison Sociale",
             typeof(System.String)));
             dt.Columns.Add(new DataColumn("Ville", typeof(System.String)));
@@ -53,7 +53,7 @@ namespace TpB2B
             {
                 // instanciation DataRow (=ligne de DataTable)
                 dr = dt.NewRow();
-                // affectation des 3 colonnes
+                // affectation des 5 colonnes
                 // la collection voit les éléments comme des ‘Object’
                 // ==>'caster' en MStagiaire pour en voir les attributs
                 dr[0] = ((MClients)(DonneesClients.ArrayStag[i])).Nom;
@@ -71,6 +71,17 @@ namespace TpB2B
             this.grdListeClients.Refresh();
             dt = null; // pas vraiment utile non plus…
             dr = null;
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            if (this.grdListeClients.SelectedRows.Count > 0 &&
+            this.grdListeClients.SelectedRows[0].Index !=
+            this.grdListeClients.Rows.Count - 1)
+            {
+                this.grdListeClients.Rows.RemoveAt(
+                    this.grdListeClients.SelectedRows[0].Index);
+            }
         }
     }
 }

@@ -35,15 +35,15 @@
             this.txtRaisonSoc = new System.Windows.Forms.TextBox();
             this.lblRaisonSoc = new System.Windows.Forms.Label();
             this.grdListeClients = new System.Windows.Forms.DataGridView();
-            this.btnNvxClient = new System.Windows.Forms.Button();
-            this.btnSupprimer = new System.Windows.Forms.Button();
-            this.btnFermer = new System.Windows.Forms.Button();
             this.Raison = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodePostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Activite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnNvxClient = new System.Windows.Forms.Button();
+            this.btnSupprimer = new System.Windows.Forms.Button();
+            this.btnFermer = new System.Windows.Forms.Button();
             this.grpRecherche.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdListeClients)).BeginInit();
             this.SuspendLayout();
@@ -110,35 +110,6 @@
             this.grdListeClients.Size = new System.Drawing.Size(645, 275);
             this.grdListeClients.TabIndex = 5;
             // 
-            // btnNvxClient
-            // 
-            this.btnNvxClient.Location = new System.Drawing.Point(396, 415);
-            this.btnNvxClient.Name = "btnNvxClient";
-            this.btnNvxClient.Size = new System.Drawing.Size(110, 23);
-            this.btnNvxClient.TabIndex = 6;
-            this.btnNvxClient.Text = "&Nouveau Client";
-            this.btnNvxClient.UseVisualStyleBackColor = true;
-            this.btnNvxClient.Click += new System.EventHandler(this.btnNvxClient_Click);
-            // 
-            // btnSupprimer
-            // 
-            this.btnSupprimer.Location = new System.Drawing.Point(512, 415);
-            this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
-            this.btnSupprimer.TabIndex = 7;
-            this.btnSupprimer.Text = "&Supprimer";
-            this.btnSupprimer.UseVisualStyleBackColor = true;
-            // 
-            // btnFermer
-            // 
-            this.btnFermer.Location = new System.Drawing.Point(593, 415);
-            this.btnFermer.Name = "btnFermer";
-            this.btnFermer.Size = new System.Drawing.Size(75, 23);
-            this.btnFermer.TabIndex = 8;
-            this.btnFermer.Text = "&Fermer";
-            this.btnFermer.UseVisualStyleBackColor = true;
-            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
-            // 
             // Raison
             // 
             this.Raison.HeaderText = "Raison Sociale";
@@ -170,6 +141,36 @@
             // 
             this.Nature.HeaderText = "Nature";
             this.Nature.Name = "Nature";
+            // 
+            // btnNvxClient
+            // 
+            this.btnNvxClient.Location = new System.Drawing.Point(396, 415);
+            this.btnNvxClient.Name = "btnNvxClient";
+            this.btnNvxClient.Size = new System.Drawing.Size(110, 23);
+            this.btnNvxClient.TabIndex = 6;
+            this.btnNvxClient.Text = "&Nouveau Client";
+            this.btnNvxClient.UseVisualStyleBackColor = true;
+            this.btnNvxClient.Click += new System.EventHandler(this.btnNvxClient_Click);
+            // 
+            // btnSupprimer
+            // 
+            this.btnSupprimer.Location = new System.Drawing.Point(512, 415);
+            this.btnSupprimer.Name = "btnSupprimer";
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.TabIndex = 7;
+            this.btnSupprimer.Text = "&Supprimer";
+            this.btnSupprimer.UseVisualStyleBackColor = true;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            // 
+            // btnFermer
+            // 
+            this.btnFermer.Location = new System.Drawing.Point(593, 415);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(75, 23);
+            this.btnFermer.TabIndex = 8;
+            this.btnFermer.Text = "&Fermer";
+            this.btnFermer.UseVisualStyleBackColor = true;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
             // 
             // frmListeClients
             // 
