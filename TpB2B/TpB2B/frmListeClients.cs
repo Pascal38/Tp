@@ -35,7 +35,7 @@ namespace TpB2B
         /// </summary>
         private void afficheClients()
         {
-            // DataTable : pour recopier les stagiaires
+            // DataTable : pour recopier les Clients
             // (stockés en collection) ;
             // à relier au DataGridView pour personnaliser son affichage
             DataTable dt = new DataTable();
