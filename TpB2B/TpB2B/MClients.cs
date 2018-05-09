@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace TpB2B
 {
     ///<summary>
-    /// classe des stagiaires :
+    /// classe des clients :
     /// permet de mémoriser les informations concernant le clients
     /// comporte des membres propriétés et attributs
-    /// et le nombre de stagiaires,
+    /// et le nombre de clients,
     /// donnée partagée par toutes les instances (==> static)
     /// </summary> 
     public class MClients
@@ -40,7 +40,7 @@ namespace TpB2B
         /// la raison sociale
         /// </summary>
         private String nomClient;
-
+        
         /// <summary>
         /// obtient ou définit le nom du stagiaire (forcé en majuscules)
         /// </summary>
@@ -66,11 +66,12 @@ namespace TpB2B
             set { activiteClient = value.Trim().ToLower(); } // mettre le prénom en minuscules
         }
         /// <summary>
-        /// immeuble, rue et numéro, le format est libre
+        /// Nature du client
         /// </summary>
         private String natureClient;
+        
         /// <summary>
-        /// obtient ou définit immeuble, rue et numéro, le format est libre
+        /// Nature du client
         /// </summary>
         public String Nature
         {

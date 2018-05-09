@@ -31,13 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMDI));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nouveauClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listeDesClientsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fenêtreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesClientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nouveauClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listeDesClientsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nouveauContactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,11 +59,26 @@
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nouveauClientToolStripMenuItem,
-            this.listeDesClientsToolStripMenuItem1,
-            this.nouveauContactToolStripMenuItem});
+            this.listeDesClientsToolStripMenuItem1});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // nouveauClientToolStripMenuItem
+            // 
+            this.nouveauClientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clientsToolStripMenuItem,
+            this.contactsToolStripMenuItem});
+            this.nouveauClientToolStripMenuItem.Name = "nouveauClientToolStripMenuItem";
+            this.nouveauClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nouveauClientToolStripMenuItem.Text = "Nouveau...";
+            // 
+            // listeDesClientsToolStripMenuItem1
+            // 
+            this.listeDesClientsToolStripMenuItem1.Name = "listeDesClientsToolStripMenuItem1";
+            this.listeDesClientsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listeDesClientsToolStripMenuItem1.Text = "Liste des Clients";
+            this.listeDesClientsToolStripMenuItem1.Click += new System.EventHandler(this.listeDesClientsToolStripMenuItem_Click);
             // 
             // editionToolStripMenuItem
             // 
@@ -91,26 +107,19 @@
             this.aideToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.aideToolStripMenuItem.Text = "Aide";
             // 
-            // nouveauClientToolStripMenuItem
+            // clientsToolStripMenuItem
             // 
-            this.nouveauClientToolStripMenuItem.Name = "nouveauClientToolStripMenuItem";
-            this.nouveauClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nouveauClientToolStripMenuItem.Text = "Nouveau Client";
-            this.nouveauClientToolStripMenuItem.Click += new System.EventHandler(this.nouveauClientToolStripMenuItem_Click);
+            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientsToolStripMenuItem.Text = "Clients";
+            this.clientsToolStripMenuItem.Click += new System.EventHandler(this.nouveauClientToolStripMenuItem_Click);
             // 
-            // listeDesClientsToolStripMenuItem1
+            // contactsToolStripMenuItem
             // 
-            this.listeDesClientsToolStripMenuItem1.Name = "listeDesClientsToolStripMenuItem1";
-            this.listeDesClientsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.listeDesClientsToolStripMenuItem1.Text = "Liste des Clients";
-            this.listeDesClientsToolStripMenuItem1.Click += new System.EventHandler(this.listeDesClientsToolStripMenuItem_Click);
-            // 
-            // nouveauContactToolStripMenuItem
-            // 
-            this.nouveauContactToolStripMenuItem.Name = "nouveauContactToolStripMenuItem";
-            this.nouveauContactToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.nouveauContactToolStripMenuItem.Text = "Nouveau Contact";
-            this.nouveauContactToolStripMenuItem.Click += new System.EventHandler(this.nouveauContactToolStripMenuItem_Click);
+            this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
+            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactsToolStripMenuItem.Text = "Contacts";
+            this.contactsToolStripMenuItem.Click += new System.EventHandler(this.nouveauContactToolStripMenuItem_Click);
             // 
             // frmMDI
             // 
@@ -142,7 +151,8 @@
         private System.Windows.Forms.ToolStripMenuItem listeDesClientsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nouveauClientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listeDesClientsToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem nouveauContactToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clientsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem contactsToolStripMenuItem;
     }
 }
 
