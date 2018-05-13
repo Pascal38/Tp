@@ -12,6 +12,9 @@ namespace TpB2B
 {
     public partial class frmListeClients : Form
     {
+
+        private Int32 iClient;
+
         public frmListeClients()
         {
             InitializeComponent();
@@ -21,8 +24,17 @@ namespace TpB2B
         {
             frmNvxClient frmNC; // déclare une instance du form
             frmNC = new frmNvxClient(); // instancie le form
-            frmNC.Show(); // affiche le form dans son conteneur
+            //frmNC.Show(); // affiche le form dans son conteneur
+            if (frmNC.ShowDialog() == DialogResult.OK)
+            {
+                //recherche rang du client
+                //this.iClient = MClients.NClients - 1;
+                //afficher ce client sur le form Liste des clients
+                this.afficheClients();
+            }
         }
+
+
 
         private void btnFermer_Click(object sender, EventArgs e)
         {
@@ -42,25 +54,26 @@ namespace TpB2B
             DataRow dr; // ligne de la datatable
             Int32 i; // var de boucle
                      // ajout à la datatable de 5 colonnes personnalisées
-            dt.Columns.Add(new DataColumn("Raison Sociale",
-            typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Raison Sociale",typeof(System.String)));
             dt.Columns.Add(new DataColumn("Ville", typeof(System.String)));
-            dt.Columns.Add(new DataColumn("Code Postal", typeof(System.Int32)));
+            dt.Columns.Add(new DataColumn("Code Postal", typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Privé ?", typeof(bool)));
             dt.Columns.Add(new DataColumn("Activite", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Nature", typeof(System.String)));
             // boucle remplissage de la DataTable à partir de la collection
-            for (i = 0; i < DonneesClients.ArrayStag.Count; i++)
+            for (i = 0; i < Donnees.ArrayClient.Count; i++)
             {
                 // instanciation DataRow (=ligne de DataTable)
                 dr = dt.NewRow();
                 // affectation des 5 colonnes
                 // la collection voit les éléments comme des ‘Object’
                 // ==>'caster' en MStagiaire pour en voir les attributs
-                dr[0] = ((MClients)(DonneesClients.ArrayStag[i])).Nom;
-                dr[1] = ((MClients)(DonneesClients.ArrayStag[i])).Ville;
-                dr[2] = ((MClients)(DonneesClients.ArrayStag[i])).CodePostal;
-                dr[4] = ((MClients)(DonneesClients.ArrayStag[i])).Activite;
-                dr[5] = ((MClients)(DonneesClients.ArrayStag[i])).Nature;
+                dr[0] = ((MClients)(Donnees.ArrayClient[i])).RaisonSociale;
+                dr[1] = ((MClients)(Donnees.ArrayClient[i])).Ville;
+                dr[2] = ((MClients)(Donnees.ArrayClient[i])).CodePostal;
+                dr[3] = ((MClients)(Donnees.ArrayClient[i])).TypeClient;
+                dr[4] = ((MClients)(Donnees.ArrayClient[i])).Activite;
+                dr[5] = ((MClients)(Donnees.ArrayClient[i])).Nature;
                 // ajout de la ligne à la Datatable
                 // (la propriété Rows est elle-même une collection...)
                 dt.Rows.Add(dr);
@@ -82,6 +95,17 @@ namespace TpB2B
                 this.grdListeClients.Rows.RemoveAt(
                     this.grdListeClients.SelectedRows[0].Index);
             }
+        }
+
+        private void grdListeClients_DoubleClick(object sender, EventArgs e)
+        {
+            //ouvre la feuille détail en y affichant le client et ses contacts, correspondant 
+            // à la ligne double-cliquée
+            iClient = this.grdListeClients.CurrentRow.Index;
+            MClients lecli = Donnees.ArrayClient[iClient] as MClients;
+            frmConsultclient2 frmCS = new frmConsultclient2(lecli);
+            frmCS.ShowDialog();
+            this.afficheClients();
         }
     }
 }

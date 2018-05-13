@@ -19,7 +19,7 @@ namespace TpB2B
         /// nombre de Numéro client
         /// (donnée partagée par toutes les instances)
         /// </summary>
-        public static Int32 Nstag;
+        public static Int32 Nclients;
 
         /// <summary>
         /// obtient le numéro du client
@@ -75,8 +75,8 @@ namespace TpB2B
         /// </summary>
         public String Nature
         {
-            get { return Nature; }
-            set { Nature = value; }
+            get { return this.natureClient; }
+            set { this.natureClient = value; }
         }
 
         /// <summary>
@@ -95,7 +95,7 @@ namespace TpB2B
         /// le code postal, l'appelant devra prendre garde à passer
         /// un code postal valide à 5 chiffres
         /// </summary>
-        private String codePostalStagiaire;
+        private String codePostal;
 
         /// <summary>
         /// obtient ou définit le code postal (contrôle : 5 car, tous chiffres)
@@ -103,7 +103,7 @@ namespace TpB2B
         /// <exception cref="Exception">Si code postal non valide</exception>
         public String CodePostal
         {
-            get { return codePostalStagiaire; } // en lecture, retourne la var privée 
+            get { return codePostal; } // en lecture, retourne la var privée 
             set
             {
                 // l'appelant doit fournir un code postal valide à 5 chiffres
@@ -128,7 +128,7 @@ namespace TpB2B
                     }
                     else
                     {
-                        codePostalStagiaire = value; // tout est bon, on affecte la propriété
+                        codePostal = value; // tout est bon, on affecte la propriété
                     }
                 }
                 else // il n'y a pas 5 caractères
@@ -140,6 +140,130 @@ namespace TpB2B
                 }
             }
         }
-
+        /// <summary>
+        /// le prenom du client
+        /// </summary>
+        private String prenomClient;
+        /// <summary>
+        /// obtient ou définit le prénom
+        /// </summary>
+        public String Prenom
+        {
+            get { return this.prenomClient; }
+            set { this.prenomClient = value; }
+        }
+        /// <summary>
+        /// la raison sociale du client
+        /// </summary>
+        private String raisonSociale;
+        /// <summary>
+        /// obtient ou définit la raison sociale
+        /// </summary>
+        public String RaisonSociale
+        {
+            get { return this.raisonSociale; }
+            set { this.raisonSociale = value; }
+        }
+        /// <summary>
+        /// l'adresse 1 du client
+        /// </summary>
+        private String adresse1;
+        /// <summary>
+        /// obtient ou définit l'adresse 1
+        /// </summary>
+        public String Adresse1
+        {
+            get { return this.adresse1; }
+            set { this.adresse1 = value; }
+        }
+        /// <summary>
+        /// l'adresse 2 du client
+        /// </summary>
+        private String adresse2;
+        /// <summary>
+        /// obtient ou définit l'adresse 2
+        /// </summary>
+        public String Adresse2
+        {
+            get { return this.adresse2; }
+            set { this.adresse2 = value; }
+        }
+        /// <summary>
+        /// le téléphone du client
+        /// </summary>
+        private String telephone;
+        /// <summary>
+        /// Obtient ou définit le téléphone
+        /// </summary>
+        public String Telephone
+        {
+            get { return this.telephone; }
+            set { this.telephone = value; }
+        }
+        /// <summary>
+        /// le type du client (public ou privé) : public par défaut
+        /// </summary>
+        private Boolean typeClient;
+        /// <summary>
+        /// obtient ou définit le type du client
+        /// </summary>
+        public Boolean TypeClient
+        {
+            get { return this.typeClient; }
+            set { this.typeClient = value; }
+        }
+        /// <summary>
+        /// L'effectif client
+        /// </summary>
+        private Int32 effectif;
+        /// <summary>
+        /// Obtient ou définit l'effectif
+        /// </summary>
+        public Int32 Effectif
+        {
+            get { return this.effectif; }
+            set { this.effectif = value; }
+        }
+        /// <summary>
+        /// Le Chiffre d'affaire
+        /// </summary>
+        private Int64 chiffreAffaire;
+        /// <summary>
+        /// Obtient ou définit le Chiffre d'affaire
+        /// </summary>
+        public Int64 CA
+        {
+            get { return this.chiffreAffaire; }
+            set { this.chiffreAffaire = value; }
+        }
+        /// <summary>
+        /// l'adresse email du contact
+        /// </summary>
+        private String emailContact;
+        /// <summary>
+        /// obtient ou définit l'email du contact
+        /// </summary>
+        public String Email
+        {
+            get { return this.emailContact; }
+            set { this.emailContact = value; }
+        }
+        /// <summary>
+        /// La fonction du contact
+        /// </summary>
+        private String fonctionContact;
+        /// <summary>
+        /// obtient ou définit la fonction du contact
+        /// </summary>
+        public String Fonction
+        {
+            get { return this.fonctionContact; }
+            set { this.fonctionContact = value; }
+        }
+        /// <summary>
+        /// constructeur par défaut
+        /// </summary>
+        public MClients() { }
+        
     }
 }

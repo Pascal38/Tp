@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace TpB2B
 {
@@ -17,6 +18,6 @@ namespace TpB2B
         /// <summary>
         /// collection d'objet Client
         /// </summary>
-        public static System.Collections.ArrayList ArrayClient = new System.Collections.ArrayList(); //directive using collections non présent
+        public static ArrayList ArrayClient = new ArrayList(); //directive using collections non présent
     }
 }

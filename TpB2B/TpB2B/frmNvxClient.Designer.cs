@@ -30,28 +30,28 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNvxClient));
             this.grpIdentification = new System.Windows.Forms.GroupBox();
-            this.lblNumClient = new System.Windows.Forms.Label();
-            this.txtNumClient = new System.Windows.Forms.TextBox();
-            this.lblRaisonSoc = new System.Windows.Forms.Label();
-            this.txtRaisonSoc = new System.Windows.Forms.TextBox();
-            this.lblAdresse = new System.Windows.Forms.Label();
-            this.txtAdresse = new System.Windows.Forms.TextBox();
-            this.txtAdresse2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCodePostal = new System.Windows.Forms.TextBox();
-            this.txtVille = new System.Windows.Forms.TextBox();
-            this.lblTelephone = new System.Windows.Forms.Label();
             this.txtTelephone = new System.Windows.Forms.TextBox();
+            this.lblTelephone = new System.Windows.Forms.Label();
+            this.txtVille = new System.Windows.Forms.TextBox();
+            this.txtCodePostal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAdresse2 = new System.Windows.Forms.TextBox();
+            this.txtAdresse = new System.Windows.Forms.TextBox();
+            this.lblAdresse = new System.Windows.Forms.Label();
+            this.txtRaisonSoc = new System.Windows.Forms.TextBox();
+            this.lblRaisonSoc = new System.Windows.Forms.Label();
+            this.txtNumClient = new System.Windows.Forms.TextBox();
+            this.lblNumClient = new System.Windows.Forms.Label();
             this.grpCaracteristique = new System.Windows.Forms.GroupBox();
-            this.ChbPrive = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtEffectif = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCA = new System.Windows.Forms.TextBox();
-            this.lblActivite = new System.Windows.Forms.Label();
-            this.cbxActivite = new System.Windows.Forms.ComboBox();
-            this.lblNature = new System.Windows.Forms.Label();
             this.cbxNature = new System.Windows.Forms.ComboBox();
+            this.lblNature = new System.Windows.Forms.Label();
+            this.cbxActivite = new System.Windows.Forms.ComboBox();
+            this.lblActivite = new System.Windows.Forms.Label();
+            this.txtCA = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtEffectif = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ChbPrive = new System.Windows.Forms.CheckBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnContacts = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
@@ -80,83 +80,12 @@
             this.grpIdentification.TabStop = false;
             this.grpIdentification.Text = "Identification";
             // 
-            // lblNumClient
+            // txtTelephone
             // 
-            this.lblNumClient.AutoSize = true;
-            this.lblNumClient.Location = new System.Drawing.Point(26, 34);
-            this.lblNumClient.Name = "lblNumClient";
-            this.lblNumClient.Size = new System.Drawing.Size(79, 13);
-            this.lblNumClient.TabIndex = 1;
-            this.lblNumClient.Text = "Numéro Client :";
-            // 
-            // txtNumClient
-            // 
-            this.txtNumClient.Location = new System.Drawing.Point(121, 31);
-            this.txtNumClient.Name = "txtNumClient";
-            this.txtNumClient.Size = new System.Drawing.Size(100, 20);
-            this.txtNumClient.TabIndex = 2;
-            // 
-            // lblRaisonSoc
-            // 
-            this.lblRaisonSoc.AutoSize = true;
-            this.lblRaisonSoc.Location = new System.Drawing.Point(21, 72);
-            this.lblRaisonSoc.Name = "lblRaisonSoc";
-            this.lblRaisonSoc.Size = new System.Drawing.Size(84, 13);
-            this.lblRaisonSoc.TabIndex = 3;
-            this.lblRaisonSoc.Text = "Raison Sociale :";
-            // 
-            // txtRaisonSoc
-            // 
-            this.txtRaisonSoc.Location = new System.Drawing.Point(121, 69);
-            this.txtRaisonSoc.Name = "txtRaisonSoc";
-            this.txtRaisonSoc.Size = new System.Drawing.Size(344, 20);
-            this.txtRaisonSoc.TabIndex = 4;
-            // 
-            // lblAdresse
-            // 
-            this.lblAdresse.AutoSize = true;
-            this.lblAdresse.Location = new System.Drawing.Point(54, 112);
-            this.lblAdresse.Name = "lblAdresse";
-            this.lblAdresse.Size = new System.Drawing.Size(51, 13);
-            this.lblAdresse.TabIndex = 5;
-            this.lblAdresse.Text = "Adresse :";
-            // 
-            // txtAdresse
-            // 
-            this.txtAdresse.Location = new System.Drawing.Point(121, 109);
-            this.txtAdresse.Name = "txtAdresse";
-            this.txtAdresse.Size = new System.Drawing.Size(344, 20);
-            this.txtAdresse.TabIndex = 6;
-            // 
-            // txtAdresse2
-            // 
-            this.txtAdresse2.Location = new System.Drawing.Point(121, 144);
-            this.txtAdresse2.Name = "txtAdresse2";
-            this.txtAdresse2.Size = new System.Drawing.Size(344, 20);
-            this.txtAdresse2.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 176);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Code Postal & Ville :";
-            // 
-            // txtCodePostal
-            // 
-            this.txtCodePostal.Location = new System.Drawing.Point(121, 173);
-            this.txtCodePostal.Name = "txtCodePostal";
-            this.txtCodePostal.Size = new System.Drawing.Size(85, 20);
-            this.txtCodePostal.TabIndex = 9;
-            // 
-            // txtVille
-            // 
-            this.txtVille.Location = new System.Drawing.Point(234, 173);
-            this.txtVille.Name = "txtVille";
-            this.txtVille.Size = new System.Drawing.Size(231, 20);
-            this.txtVille.TabIndex = 10;
+            this.txtTelephone.Location = new System.Drawing.Point(121, 208);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(188, 20);
+            this.txtTelephone.TabIndex = 12;
             // 
             // lblTelephone
             // 
@@ -167,12 +96,83 @@
             this.lblTelephone.TabIndex = 11;
             this.lblTelephone.Text = "Téléphone :";
             // 
-            // txtTelephone
+            // txtVille
             // 
-            this.txtTelephone.Location = new System.Drawing.Point(121, 208);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(188, 20);
-            this.txtTelephone.TabIndex = 12;
+            this.txtVille.Location = new System.Drawing.Point(234, 173);
+            this.txtVille.Name = "txtVille";
+            this.txtVille.Size = new System.Drawing.Size(231, 20);
+            this.txtVille.TabIndex = 10;
+            // 
+            // txtCodePostal
+            // 
+            this.txtCodePostal.Location = new System.Drawing.Point(121, 173);
+            this.txtCodePostal.Name = "txtCodePostal";
+            this.txtCodePostal.Size = new System.Drawing.Size(85, 20);
+            this.txtCodePostal.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 176);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Code Postal & Ville :";
+            // 
+            // txtAdresse2
+            // 
+            this.txtAdresse2.Location = new System.Drawing.Point(121, 144);
+            this.txtAdresse2.Name = "txtAdresse2";
+            this.txtAdresse2.Size = new System.Drawing.Size(344, 20);
+            this.txtAdresse2.TabIndex = 7;
+            // 
+            // txtAdresse
+            // 
+            this.txtAdresse.Location = new System.Drawing.Point(121, 109);
+            this.txtAdresse.Name = "txtAdresse";
+            this.txtAdresse.Size = new System.Drawing.Size(344, 20);
+            this.txtAdresse.TabIndex = 6;
+            // 
+            // lblAdresse
+            // 
+            this.lblAdresse.AutoSize = true;
+            this.lblAdresse.Location = new System.Drawing.Point(54, 112);
+            this.lblAdresse.Name = "lblAdresse";
+            this.lblAdresse.Size = new System.Drawing.Size(51, 13);
+            this.lblAdresse.TabIndex = 5;
+            this.lblAdresse.Text = "Adresse :";
+            // 
+            // txtRaisonSoc
+            // 
+            this.txtRaisonSoc.Location = new System.Drawing.Point(121, 69);
+            this.txtRaisonSoc.Name = "txtRaisonSoc";
+            this.txtRaisonSoc.Size = new System.Drawing.Size(344, 20);
+            this.txtRaisonSoc.TabIndex = 4;
+            // 
+            // lblRaisonSoc
+            // 
+            this.lblRaisonSoc.AutoSize = true;
+            this.lblRaisonSoc.Location = new System.Drawing.Point(21, 72);
+            this.lblRaisonSoc.Name = "lblRaisonSoc";
+            this.lblRaisonSoc.Size = new System.Drawing.Size(84, 13);
+            this.lblRaisonSoc.TabIndex = 3;
+            this.lblRaisonSoc.Text = "Raison Sociale :";
+            // 
+            // txtNumClient
+            // 
+            this.txtNumClient.Location = new System.Drawing.Point(121, 31);
+            this.txtNumClient.Name = "txtNumClient";
+            this.txtNumClient.Size = new System.Drawing.Size(100, 20);
+            this.txtNumClient.TabIndex = 2;
+            // 
+            // lblNumClient
+            // 
+            this.lblNumClient.AutoSize = true;
+            this.lblNumClient.Location = new System.Drawing.Point(26, 34);
+            this.lblNumClient.Name = "lblNumClient";
+            this.lblNumClient.Size = new System.Drawing.Size(79, 13);
+            this.lblNumClient.TabIndex = 1;
+            this.lblNumClient.Text = "Numéro Client :";
             // 
             // grpCaracteristique
             // 
@@ -192,65 +192,14 @@
             this.grpCaracteristique.TabStop = false;
             this.grpCaracteristique.Text = "Caractéristiques";
             // 
-            // ChbPrive
+            // cbxNature
             // 
-            this.ChbPrive.AutoSize = true;
-            this.ChbPrive.Location = new System.Drawing.Point(11, 29);
-            this.ChbPrive.Name = "ChbPrive";
-            this.ChbPrive.Size = new System.Drawing.Size(50, 17);
-            this.ChbPrive.TabIndex = 14;
-            this.ChbPrive.Text = "&Privé";
-            this.ChbPrive.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Effectif :";
-            // 
-            // txtEffectif
-            // 
-            this.txtEffectif.Location = new System.Drawing.Point(86, 55);
-            this.txtEffectif.Name = "txtEffectif";
-            this.txtEffectif.Size = new System.Drawing.Size(100, 20);
-            this.txtEffectif.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(255, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "CA :";
-            // 
-            // txtCA
-            // 
-            this.txtCA.Location = new System.Drawing.Point(288, 55);
-            this.txtCA.Name = "txtCA";
-            this.txtCA.Size = new System.Drawing.Size(83, 20);
-            this.txtCA.TabIndex = 18;
-            // 
-            // lblActivite
-            // 
-            this.lblActivite.AutoSize = true;
-            this.lblActivite.Location = new System.Drawing.Point(22, 95);
-            this.lblActivite.Name = "lblActivite";
-            this.lblActivite.Size = new System.Drawing.Size(48, 13);
-            this.lblActivite.TabIndex = 19;
-            this.lblActivite.Text = "Activité :";
-            // 
-            // cbxActivite
-            // 
-            this.cbxActivite.FormattingEnabled = true;
-            this.cbxActivite.Location = new System.Drawing.Point(86, 92);
-            this.cbxActivite.Name = "cbxActivite";
-            this.cbxActivite.Size = new System.Drawing.Size(118, 21);
-            this.cbxActivite.TabIndex = 20;
-            this.cbxActivite.Text = "Administration";
+            this.cbxNature.FormattingEnabled = true;
+            this.cbxNature.Location = new System.Drawing.Point(288, 92);
+            this.cbxNature.Name = "cbxNature";
+            this.cbxNature.Size = new System.Drawing.Size(83, 21);
+            this.cbxNature.TabIndex = 22;
+            this.cbxNature.Text = "Ancienne";
             // 
             // lblNature
             // 
@@ -261,17 +210,69 @@
             this.lblNature.TabIndex = 21;
             this.lblNature.Text = "Nature :";
             // 
-            // cbxNature
+            // cbxActivite
             // 
-            this.cbxNature.FormattingEnabled = true;
-            this.cbxNature.Location = new System.Drawing.Point(288, 92);
-            this.cbxNature.Name = "cbxNature";
-            this.cbxNature.Size = new System.Drawing.Size(83, 21);
-            this.cbxNature.TabIndex = 22;
-            this.cbxNature.Text = "Ancienne";
+            this.cbxActivite.FormattingEnabled = true;
+            this.cbxActivite.Location = new System.Drawing.Point(86, 92);
+            this.cbxActivite.Name = "cbxActivite";
+            this.cbxActivite.Size = new System.Drawing.Size(118, 21);
+            this.cbxActivite.TabIndex = 20;
+            this.cbxActivite.Text = "Administration";
+            // 
+            // lblActivite
+            // 
+            this.lblActivite.AutoSize = true;
+            this.lblActivite.Location = new System.Drawing.Point(22, 95);
+            this.lblActivite.Name = "lblActivite";
+            this.lblActivite.Size = new System.Drawing.Size(48, 13);
+            this.lblActivite.TabIndex = 19;
+            this.lblActivite.Text = "Activité :";
+            // 
+            // txtCA
+            // 
+            this.txtCA.Location = new System.Drawing.Point(288, 55);
+            this.txtCA.Name = "txtCA";
+            this.txtCA.Size = new System.Drawing.Size(83, 20);
+            this.txtCA.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(255, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "CA :";
+            // 
+            // txtEffectif
+            // 
+            this.txtEffectif.Location = new System.Drawing.Point(86, 55);
+            this.txtEffectif.Name = "txtEffectif";
+            this.txtEffectif.Size = new System.Drawing.Size(100, 20);
+            this.txtEffectif.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Effectif :";
+            // 
+            // ChbPrive
+            // 
+            this.ChbPrive.AutoSize = true;
+            this.ChbPrive.Location = new System.Drawing.Point(11, 29);
+            this.ChbPrive.Name = "ChbPrive";
+            this.ChbPrive.Size = new System.Drawing.Size(50, 17);
+            this.ChbPrive.TabIndex = 14;
+            this.ChbPrive.Text = "&Privé";
+            this.ChbPrive.UseVisualStyleBackColor = true;
             // 
             // btnOK
             // 
+            this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.Location = new System.Drawing.Point(270, 415);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
@@ -304,7 +305,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 450);
+            this.ClientSize = new System.Drawing.Size(673, 445);
             this.Controls.Add(this.btnAnnuler);
             this.Controls.Add(this.btnContacts);
             this.Controls.Add(this.btnOK);
@@ -322,32 +323,31 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox grpIdentification;
-        private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.Label lblTelephone;
-        private System.Windows.Forms.TextBox txtVille;
-        private System.Windows.Forms.TextBox txtCodePostal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtAdresse2;
-        private System.Windows.Forms.TextBox txtAdresse;
         private System.Windows.Forms.Label lblAdresse;
-        private System.Windows.Forms.TextBox txtRaisonSoc;
         private System.Windows.Forms.Label lblRaisonSoc;
-        private System.Windows.Forms.TextBox txtNumClient;
         private System.Windows.Forms.Label lblNumClient;
-        private System.Windows.Forms.GroupBox grpCaracteristique;
-        private System.Windows.Forms.CheckBox ChbPrive;
-        private System.Windows.Forms.TextBox txtCA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtEffectif;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbxActivite;
         private System.Windows.Forms.Label lblActivite;
-        private System.Windows.Forms.ComboBox cbxNature;
         private System.Windows.Forms.Label lblNature;
-        private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.Button btnContacts;
-        private System.Windows.Forms.Button btnAnnuler;
+        protected System.Windows.Forms.GroupBox grpIdentification;
+        protected System.Windows.Forms.TextBox txtTelephone;
+        protected System.Windows.Forms.TextBox txtVille;
+        protected System.Windows.Forms.TextBox txtCodePostal;
+        protected System.Windows.Forms.TextBox txtAdresse2;
+        protected System.Windows.Forms.TextBox txtAdresse;
+        protected System.Windows.Forms.TextBox txtRaisonSoc;
+        protected System.Windows.Forms.TextBox txtNumClient;
+        protected System.Windows.Forms.GroupBox grpCaracteristique;
+        protected System.Windows.Forms.CheckBox ChbPrive;
+        protected System.Windows.Forms.TextBox txtCA;
+        protected System.Windows.Forms.TextBox txtEffectif;
+        protected System.Windows.Forms.ComboBox cbxActivite;
+        protected System.Windows.Forms.ComboBox cbxNature;
+        protected System.Windows.Forms.Button btnOK;
+        protected System.Windows.Forms.Button btnContacts;
+        protected System.Windows.Forms.Button btnAnnuler;
     }
 }

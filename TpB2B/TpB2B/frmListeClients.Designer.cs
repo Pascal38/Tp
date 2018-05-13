@@ -35,12 +35,6 @@
             this.txtRaisonSoc = new System.Windows.Forms.TextBox();
             this.lblRaisonSoc = new System.Windows.Forms.Label();
             this.grdListeClients = new System.Windows.Forms.DataGridView();
-            this.Raison = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CodePostal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Activite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nature = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnNvxClient = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnFermer = new System.Windows.Forms.Button();
@@ -98,49 +92,11 @@
             // grdListeClients
             // 
             this.grdListeClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdListeClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Raison,
-            this.Ville,
-            this.CodePostal,
-            this.Prive,
-            this.Activite,
-            this.Nature});
             this.grdListeClients.Location = new System.Drawing.Point(23, 117);
             this.grdListeClients.Name = "grdListeClients";
             this.grdListeClients.Size = new System.Drawing.Size(645, 275);
             this.grdListeClients.TabIndex = 5;
-            // 
-            // Raison
-            // 
-            this.Raison.HeaderText = "Raison Sociale";
-            this.Raison.Name = "Raison";
-            // 
-            // Ville
-            // 
-            this.Ville.HeaderText = "Ville";
-            this.Ville.Name = "Ville";
-            // 
-            // CodePostal
-            // 
-            this.CodePostal.HeaderText = "Code Postal";
-            this.CodePostal.Name = "CodePostal";
-            // 
-            // Prive
-            // 
-            this.Prive.HeaderText = "Privé ?";
-            this.Prive.Name = "Prive";
-            this.Prive.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Prive.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Activite
-            // 
-            this.Activite.HeaderText = "Activité";
-            this.Activite.Name = "Activite";
-            // 
-            // Nature
-            // 
-            this.Nature.HeaderText = "Nature";
-            this.Nature.Name = "Nature";
+            this.grdListeClients.DoubleClick += new System.EventHandler(this.grdListeClients_DoubleClick);
             // 
             // btnNvxClient
             // 
@@ -204,11 +160,5 @@
         private System.Windows.Forms.Button btnNvxClient;
         private System.Windows.Forms.Button btnSupprimer;
         private System.Windows.Forms.Button btnFermer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Raison;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ville;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodePostal;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Prive;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Activite;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nature;
     }
 }

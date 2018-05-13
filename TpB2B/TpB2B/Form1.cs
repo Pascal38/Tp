@@ -29,7 +29,8 @@ namespace TpB2B
             frmListeClients frmL; // déclare une instance du form
             frmL = new frmListeClients(); // instancie le form
             frmL.MdiParent = this;
-            frmL.Show(); // affiche le form dans son conteneur
+            frmL.Show(); // affiche le form dans son conteneur
+
         }
 
         private void nouveauClientToolStripMenuItem_Click(object sender, EventArgs e)
