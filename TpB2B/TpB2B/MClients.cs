@@ -20,6 +20,7 @@ namespace TpB2B
         /// (donnée partagée par toutes les instances)
         /// </summary>
         public static Int32 Nclients;
+        public static Int32 NContsClient;
 
         /// <summary>
         /// obtient le numéro du client

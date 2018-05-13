@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNvxContact));
             this.grpIdentite = new System.Windows.Forms.GroupBox();
-            this.lblNom = new System.Windows.Forms.Label();
-            this.txtNom = new System.Windows.Forms.TextBox();
-            this.lblPrenom = new System.Windows.Forms.Label();
-            this.txtPrenom = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTelephone = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtTelephone = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPrenom = new System.Windows.Forms.TextBox();
+            this.lblPrenom = new System.Windows.Forms.Label();
+            this.txtNom = new System.Windows.Forms.TextBox();
+            this.lblNom = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbxFonction = new System.Windows.Forms.ComboBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpIdentite.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -65,53 +65,23 @@
             this.grpIdentite.TabStop = false;
             this.grpIdentite.Text = "Identité";
             // 
-            // lblNom
+            // pictureBox1
             // 
-            this.lblNom.AutoSize = true;
-            this.lblNom.Location = new System.Drawing.Point(15, 41);
-            this.lblNom.Name = "lblNom";
-            this.lblNom.Size = new System.Drawing.Size(35, 13);
-            this.lblNom.TabIndex = 1;
-            this.lblNom.Text = "Nom :";
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(310, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 178);
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtNom
+            // txtEmail
             // 
-            this.txtNom.Location = new System.Drawing.Point(97, 34);
-            this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(201, 20);
-            this.txtNom.TabIndex = 2;
-            // 
-            // lblPrenom
-            // 
-            this.lblPrenom.AutoSize = true;
-            this.lblPrenom.Location = new System.Drawing.Point(15, 95);
-            this.lblPrenom.Name = "lblPrenom";
-            this.lblPrenom.Size = new System.Drawing.Size(49, 13);
-            this.lblPrenom.TabIndex = 3;
-            this.lblPrenom.Text = "Prénom :";
-            // 
-            // txtPrenom
-            // 
-            this.txtPrenom.Location = new System.Drawing.Point(97, 92);
-            this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(201, 20);
-            this.txtPrenom.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Téléphone :";
-            // 
-            // txtTelephone
-            // 
-            this.txtTelephone.Location = new System.Drawing.Point(97, 138);
-            this.txtTelephone.Name = "txtTelephone";
-            this.txtTelephone.Size = new System.Drawing.Size(201, 20);
-            this.txtTelephone.TabIndex = 6;
+            this.txtEmail.Location = new System.Drawing.Point(97, 192);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(201, 20);
+            this.txtEmail.TabIndex = 8;
             // 
             // lblEmail
             // 
@@ -122,12 +92,53 @@
             this.lblEmail.TabIndex = 7;
             this.lblEmail.Text = "Email :";
             // 
-            // txtEmail
+            // txtTelephone
             // 
-            this.txtEmail.Location = new System.Drawing.Point(97, 192);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(201, 20);
-            this.txtEmail.TabIndex = 8;
+            this.txtTelephone.Location = new System.Drawing.Point(97, 138);
+            this.txtTelephone.Name = "txtTelephone";
+            this.txtTelephone.Size = new System.Drawing.Size(201, 20);
+            this.txtTelephone.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Téléphone :";
+            // 
+            // txtPrenom
+            // 
+            this.txtPrenom.Location = new System.Drawing.Point(97, 92);
+            this.txtPrenom.Name = "txtPrenom";
+            this.txtPrenom.Size = new System.Drawing.Size(201, 20);
+            this.txtPrenom.TabIndex = 4;
+            // 
+            // lblPrenom
+            // 
+            this.lblPrenom.AutoSize = true;
+            this.lblPrenom.Location = new System.Drawing.Point(15, 95);
+            this.lblPrenom.Name = "lblPrenom";
+            this.lblPrenom.Size = new System.Drawing.Size(49, 13);
+            this.lblPrenom.TabIndex = 3;
+            this.lblPrenom.Text = "Prénom :";
+            // 
+            // txtNom
+            // 
+            this.txtNom.Location = new System.Drawing.Point(97, 34);
+            this.txtNom.Name = "txtNom";
+            this.txtNom.Size = new System.Drawing.Size(201, 20);
+            this.txtNom.TabIndex = 2;
+            // 
+            // lblNom
+            // 
+            this.lblNom.AutoSize = true;
+            this.lblNom.Location = new System.Drawing.Point(15, 41);
+            this.lblNom.Name = "lblNom";
+            this.lblNom.Size = new System.Drawing.Size(35, 13);
+            this.lblNom.TabIndex = 1;
+            this.lblNom.Text = "Nom :";
             // 
             // label2
             // 
@@ -149,12 +160,14 @@
             // 
             // btnOK
             // 
+            this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnOK.Location = new System.Drawing.Point(361, 404);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 11;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnAnnuler
             // 
@@ -165,17 +178,6 @@
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = true;
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(310, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 178);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmNvxContact
             // 
