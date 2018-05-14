@@ -42,6 +42,8 @@
             this.lblRaisonsociale = new System.Windows.Forms.Label();
             this.lblNuméroclient = new System.Windows.Forms.Label();
             this.gbxCaractéristiques = new System.Windows.Forms.GroupBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.lblNature = new System.Windows.Forms.Label();
             this.cbxNature = new System.Windows.Forms.ComboBox();
             this.cbxActivite = new System.Windows.Forms.ComboBox();
             this.txtb248000 = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@
             this.lblEffectif = new System.Windows.Forms.Label();
             this.btnannuler = new System.Windows.Forms.Button();
             this.btnok = new System.Windows.Forms.Button();
-            this.lblNature = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.gbxIdentification.SuspendLayout();
             this.gbxCaractéristiques.SuspendLayout();
             this.SuspendLayout();
@@ -198,6 +198,25 @@
             this.gbxCaractéristiques.TabStop = false;
             this.gbxCaractéristiques.Text = "Caractéristiques";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(10, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(50, 17);
+            this.checkBox1.TabIndex = 8;
+            this.checkBox1.Text = "Privé";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // lblNature
+            // 
+            this.lblNature.AutoSize = true;
+            this.lblNature.Location = new System.Drawing.Point(242, 69);
+            this.lblNature.Name = "lblNature";
+            this.lblNature.Size = new System.Drawing.Size(45, 13);
+            this.lblNature.TabIndex = 7;
+            this.lblNature.Text = "Nature :";
+            // 
             // cbxNature
             // 
             this.cbxNature.FormattingEnabled = true;
@@ -280,25 +299,6 @@
             this.btnok.Text = "OK";
             this.btnok.UseVisualStyleBackColor = true;
             // 
-            // lblNature
-            // 
-            this.lblNature.AutoSize = true;
-            this.lblNature.Location = new System.Drawing.Point(242, 69);
-            this.lblNature.Name = "lblNature";
-            this.lblNature.Size = new System.Drawing.Size(45, 13);
-            this.lblNature.TabIndex = 7;
-            this.lblNature.Text = "Nature :";
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(10, 19);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(50, 17);
-            this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Privé";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // frmModificationClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -310,6 +310,7 @@
             this.Controls.Add(this.gbxIdentification);
             this.Name = "frmModificationClient";
             this.Text = "Modification client";
+            this.Load += new System.EventHandler(this.frmModificationClient_Load);
             this.gbxIdentification.ResumeLayout(false);
             this.gbxIdentification.PerformLayout();
             this.gbxCaractéristiques.ResumeLayout(false);

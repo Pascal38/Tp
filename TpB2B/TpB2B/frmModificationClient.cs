@@ -54,6 +54,9 @@ namespace frmMdfClient
 
         }
 
-        
+        private void frmModificationClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

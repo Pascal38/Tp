@@ -46,7 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Donnees.cs" />
-    <Compile Include="DonneesClients.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

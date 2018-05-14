@@ -32,13 +32,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nouveauClientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesClientsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fenêtreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listeDesClientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contactsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,13 +70,27 @@
             this.clientsToolStripMenuItem,
             this.contactsToolStripMenuItem});
             this.nouveauClientToolStripMenuItem.Name = "nouveauClientToolStripMenuItem";
-            this.nouveauClientToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nouveauClientToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.nouveauClientToolStripMenuItem.Text = "Nouveau...";
+            // 
+            // clientsToolStripMenuItem
+            // 
+            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
+            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.clientsToolStripMenuItem.Text = "Clients";
+            this.clientsToolStripMenuItem.Click += new System.EventHandler(this.nouveauClientToolStripMenuItem_Click);
+            // 
+            // contactsToolStripMenuItem
+            // 
+            this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
+            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.contactsToolStripMenuItem.Text = "Contacts";
+            this.contactsToolStripMenuItem.Click += new System.EventHandler(this.nouveauContactToolStripMenuItem_Click);
             // 
             // listeDesClientsToolStripMenuItem1
             // 
             this.listeDesClientsToolStripMenuItem1.Name = "listeDesClientsToolStripMenuItem1";
-            this.listeDesClientsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listeDesClientsToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
             this.listeDesClientsToolStripMenuItem1.Text = "Liste des Clients";
             this.listeDesClientsToolStripMenuItem1.Click += new System.EventHandler(this.listeDesClientsToolStripMenuItem_Click);
             // 
@@ -97,7 +111,7 @@
             // listeDesClientsToolStripMenuItem
             // 
             this.listeDesClientsToolStripMenuItem.Name = "listeDesClientsToolStripMenuItem";
-            this.listeDesClientsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listeDesClientsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.listeDesClientsToolStripMenuItem.Text = "Liste des Clients";
             this.listeDesClientsToolStripMenuItem.Click += new System.EventHandler(this.listeDesClientsToolStripMenuItem_Click);
             // 
@@ -106,20 +120,6 @@
             this.aideToolStripMenuItem.Name = "aideToolStripMenuItem";
             this.aideToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.aideToolStripMenuItem.Text = "Aide";
-            // 
-            // clientsToolStripMenuItem
-            // 
-            this.clientsToolStripMenuItem.Name = "clientsToolStripMenuItem";
-            this.clientsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.clientsToolStripMenuItem.Text = "Clients";
-            this.clientsToolStripMenuItem.Click += new System.EventHandler(this.nouveauClientToolStripMenuItem_Click);
-            // 
-            // contactsToolStripMenuItem
-            // 
-            this.contactsToolStripMenuItem.Name = "contactsToolStripMenuItem";
-            this.contactsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.contactsToolStripMenuItem.Text = "Contacts";
-            this.contactsToolStripMenuItem.Click += new System.EventHandler(this.nouveauContactToolStripMenuItem_Click);
             // 
             // frmMDI
             // 

@@ -142,6 +142,7 @@
             this.Name = "frmListeClients";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "frmListeClients";
+            this.Load += new System.EventHandler(this.frmListeClients_Load);
             this.grpRecherche.ResumeLayout(false);
             this.grpRecherche.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdListeClients)).EndInit();

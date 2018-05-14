@@ -7,7 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/// <summary>
+/// Cod pour le Form Liste Clients
+/// Avec un DataGridView ainsi qu'une zone de recherche.
+/// Fait par : Pascal
+/// Le : 13 Mai 2018
+/// </summary>
 namespace TpB2B
 {
     public partial class frmListeClients : Form
@@ -106,6 +111,11 @@ namespace TpB2B
             frmConsultclient2 frmCS = new frmConsultclient2(lecli);
             frmCS.ShowDialog();
             this.afficheClients();
+        }
+
+        private void frmListeClients_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
