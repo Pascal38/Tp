@@ -10,16 +10,19 @@ namespace TpB2B
     /// classe des clients :
     /// permet de mémoriser les informations concernant le clients
     /// comporte des membres propriétés et attributs
-    /// et le nombre de clients,
+    /// et le nombre de clients, le nombre de contact par client
     /// donnée partagée par toutes les instances (==> static)
     /// </summary> 
     public class MClients
     {
         /// <summary>
-        /// nombre de Numéro client
+        /// nombre de client
         /// (donnée partagée par toutes les instances)
         /// </summary>
         public static Int32 Nclients;
+        /// <summary>
+        /// nombre de contact par client
+        /// </summary>
         public static Int32 NContsClient;
 
         /// <summary>
@@ -43,7 +46,7 @@ namespace TpB2B
         private String nomClient;
         
         /// <summary>
-        /// obtient ou définit le nom du stagiaire (forcé en majuscules)
+        /// obtient ou définit le nom du client (forcé en majuscules)
         /// </summary>
         public String Nom
         {
@@ -55,16 +58,16 @@ namespace TpB2B
             set { this.nomClient = value.Trim().ToUpper(); } // mettre le nom en majuscules
         }
         /// <summary>
-        /// le prénom de stagiaire
+        /// l'activité du client
         /// </summary>
         private String activiteClient;
         /// <summary>
-        /// obtient ou définit le prénom de stagiaire (forcé en minuscules)
+        /// obtient ou définit  l'activité du client (forcé en minuscules)
         /// </summary>
         public String Activite
         {
             get { return activiteClient; } // en lecture, retourne la var privée
-            set { activiteClient = value.Trim().ToLower(); } // mettre le prénom en minuscules
+            set { activiteClient = value.Trim().ToLower(); } // mettre l'activité en minuscules
         }
         /// <summary>
         /// Nature du client
@@ -72,7 +75,7 @@ namespace TpB2B
         private String natureClient;
         
         /// <summary>
-        /// Nature du client
+        /// obtient ou définit la nature du client
         /// </summary>
         public String Nature
         {
