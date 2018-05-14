@@ -59,7 +59,7 @@ namespace TpB2B
             DataRow dr; // ligne de la datatable
             Int32 i; // var de boucle
                      // ajout à la datatable de 5 colonnes personnalisées
-            dt.Columns.Add(new DataColumn("Raison Sociale",typeof(System.String)));
+            dt.Columns.Add(new DataColumn("Raison Sociale", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Ville", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Code Postal", typeof(System.String)));
             dt.Columns.Add(new DataColumn("Privé ?", typeof(bool)));
@@ -101,18 +101,19 @@ namespace TpB2B
                     this.grdListeClients.SelectedRows[0].Index);
             }
         }
-
-        private void grdListeClients_DoubleClick(object sender, EventArgs e)
+        
+        private void grdListeClients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //ouvre la feuille détail en y affichant le client et ses contacts, correspondant 
-            // à la ligne double-cliquée
-            iClient = this.grdListeClients.CurrentRow.Index;
-            MClients lecli = Donnees.ArrayClient[iClient] as MClients;
-            frmConsultclient2 frmCS = new frmConsultclient2(lecli);
-            frmCS.ShowDialog();
+            Int32 iSClient;
+
+            iSClient = this.grdListeClients.CurrentRow.Index;
+
+            MClients leClient = Donnees.ArrayClient[iSClient] as MClients;
+
+            frmConsultclient2 frmVisu = new frmConsultclient2(leClient);
+            frmVisu.ShowDialog();
             this.afficheClients();
         }
-
         private void frmListeClients_Load(object sender, EventArgs e)
         {
 

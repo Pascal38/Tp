@@ -289,6 +289,7 @@
             this.btnannuler.TabIndex = 2;
             this.btnannuler.Text = "Annuler";
             this.btnannuler.UseVisualStyleBackColor = true;
+            this.btnannuler.Click += new System.EventHandler(this.btnannuler_Click);
             // 
             // btnok
             // 

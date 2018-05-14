@@ -102,12 +102,14 @@ namespace TpB2B
 
         private void btnModifierClient_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnNouveauContact_Click(object sender, EventArgs e)
         {
-
+            frmNvxContact frmCont = new frmNvxContact();
+            // afficher le form détail en modal
+            frmCont.ShowDialog();
         }
 
         private void btnFermer_Click(object sender, EventArgs e)

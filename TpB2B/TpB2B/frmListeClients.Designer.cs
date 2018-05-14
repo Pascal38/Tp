@@ -96,7 +96,8 @@
             this.grdListeClients.Name = "grdListeClients";
             this.grdListeClients.Size = new System.Drawing.Size(645, 275);
             this.grdListeClients.TabIndex = 5;
-            this.grdListeClients.DoubleClick += new System.EventHandler(this.grdListeClients_DoubleClick);
+            this.grdListeClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdListeClients_CellContentClick);
+            this.grdListeClients.DoubleClick += new System.EventHandler(this.frmListeClients_Load);
             // 
             // btnNvxClient
             // 
@@ -141,7 +142,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmListeClients";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "frmListeClients";
+            this.Text = "Liste des Clients";
             this.Load += new System.EventHandler(this.frmListeClients_Load);
             this.grpRecherche.ResumeLayout(false);
             this.grpRecherche.PerformLayout();

@@ -58,5 +58,10 @@ namespace frmMdfClient
         {
 
         }
+
+        private void btnannuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
